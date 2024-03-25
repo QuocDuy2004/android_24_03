@@ -12,7 +12,7 @@ import com.google.android.material.tabs.TabLayoutMediator;
 public class MainActivity extends AppCompatActivity {
 
     private TabLayout tabLayout;
-    private ViewPager2 pager2;
+    private ViewPager2 viewPager2;
     private int selectedTabPosition = 0;
 
     @Override
@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         tabLayout = findViewById(R.id.tablayout);
-        pager2 = findViewById(R.id.viewPager2);
+        ViewPager2 pager2 = findViewById(R.id.viewPager2);
 
         TablayoutAdapter adapter = new TablayoutAdapter(MainActivity.this);
         pager2.setAdapter(adapter);
@@ -79,7 +79,7 @@ public class MainActivity extends AppCompatActivity {
                 } else {
                     Drawable icon = tab.getIcon();
                     if (icon != null) {
-                        icon.setColorFilter(null); // Xóa bộ lọc màu nếu có
+                        icon.setColorFilter(null);
                         tab.setIcon(icon);
                     }
                 }

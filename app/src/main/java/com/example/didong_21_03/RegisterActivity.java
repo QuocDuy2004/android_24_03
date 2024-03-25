@@ -16,7 +16,7 @@ public class RegisterActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
 
-        TextView txtTTK = findViewById(R.id.text);
+        TextView txtTTK = findViewById(R.id.texttext);
 
         txtTTK.setOnClickListener(new View.OnClickListener() {
             @Override
